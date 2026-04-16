@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Méridien Goa, Calangute — TravClan</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--forest:#1A2E1A;--champ2:#D4BC82;--cream:#F5F2EB;--sand:#EDE8DC;--white:#fff;--muted:#7A8A72;--border:#DDD8CC;--text:#1E2A1E}
+body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--text)}
+.header{background:var(--forest);height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 40px}
+.header img{height:30px;filter:brightness(0) invert(1);opacity:.92}
+.back-btn{font-size:12px;color:var(--champ2);text-decoration:none;opacity:.8}.back-btn:hover{opacity:1}
+.hero{position:relative;height:340px;overflow:hidden;background:var(--forest)}
+.hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,46,26,.92) 0%,rgba(26,46,26,.3) 55%,transparent 100%)}
+.hero-content{position:absolute;bottom:0;left:0;right:0;padding:28px 40px}
+.hbadge{display:inline-block;font-size:10px;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:10px;background:rgba(255,255,255,.9);color:var(--forest)}
+.hname{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:6px}
+.hloc{font-size:12px;color:rgba(255,255,255,.65)}
+.stars{display:flex;gap:3px;margin-top:8px}
+.s{width:12px;height:12px;background:var(--champ2);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.page{max-width:860px;margin:0 auto;padding:40px 24px 80px}
+.section{margin-bottom:36px}
+.stitle{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--forest);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--champ2)}
+.intro-box{background:var(--white);border-radius:12px;border:1px solid var(--border);padding:22px 24px;font-size:13px;color:#3A4A3A;line-height:1.8;border-left:4px solid var(--champ2)}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+.pbox{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px 18px}
+.pbl{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-bottom:6px}
+.pbv{font-size:20px;font-weight:700;color:var(--forest);margin-bottom:3px}
+.pbs{font-size:11px;color:var(--muted)}
+.note-box{background:var(--sand);border-radius:8px;padding:10px 14px;font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}
+.rooms-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rcard{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.rname{font-size:13px;font-weight:600;color:var(--forest);margin-bottom:6px}
+.rtags{display:flex;flex-wrap:wrap;gap:5px}
+.rtag{font-size:10px;background:var(--sand);color:#3A4A3A;padding:3px 9px;border-radius:20px}
+.venues-list{display:flex;flex-direction:column;gap:10px}
+.vrow{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.vname{font-size:13px;font-weight:600;color:var(--forest);flex:1;min-width:160px}
+.vcaps{display:flex;gap:8px;flex-wrap:wrap}
+.vcap{font-size:11px;color:var(--muted);background:var(--sand);padding:3px 10px;border-radius:20px}
+.usps{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.usp{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.usp-icon{font-size:20px;flex-shrink:0}
+.usp-title{font-size:13px;font-weight:600;color:var(--forest);margin-bottom:3px}
+.usp-desc{font-size:11px;color:var(--muted);line-height:1.5}
+.footer{background:var(--forest);padding:28px 24px;text-align:center;border-top:3px solid rgba(232,213,163,.2)}
+.footer img{height:26px;filter:brightness(0) invert(1);opacity:.85;margin-bottom:8px}
+.footer p{font-size:10px;color:rgba(255,255,255,.25);line-height:1.8;margin-top:8px}
+@media(max-width:600px){.price-grid,.rooms-grid,.usps{grid-template-columns:1fr}.hname{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="https://i.ibb.co/679vpSRS/logo-DBlue.png" alt="TravClan">
+  <a class="back-btn" href="index.html">← Back to all hotels</a>
+</div>
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1200&q=80" alt="Le Méridien Goa">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hbadge">Premium · 5-Star</div>
+    <div class="hname">Le Méridien Goa, Calangute</div>
+    <div class="hloc">📍 Aguada Siolim Road, Calangute · 30 km Mopa · 5 min to beach</div>
+    <div class="stars"><div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div></div>
+  </div>
+</div>
+<div class="page">
+  <div class="section">
+    <div class="stitle">Overview</div>
+    <div class="intro-box">Marriott Bonvoy's 5-star offering in the heart of Calangute, Le Méridien Goa blends European sophistication with Goan warmth. With 1,200+ sqm of versatile indoor and outdoor event space, an open-air Telhado venue, and an inbuilt-stage Jazz & Grill hall, it's a top pick for mid-sized corporate groups, product launches, and social events seeking premium value.</div>
+  </div>
+  <div class="section">
+    <div class="stitle">Tentative Pricing</div>
+    <div class="price-grid">
+      <div class="pbox"><div class="pbl">Rooms from</div><div class="pbv">₹6,000 – ₹22,000+</div><div class="pbs">per room / night</div></div>
+      <div class="pbox"><div class="pbl">Conference from</div><div class="pbv">₹80K – ₹1.5L</div><div class="pbs">min. revenue</div></div>
+    </div>
+    <div class="note-box">ⓘ All prices are tentative. Final rates depend on date of travel, group size & availability.</div>
+  </div>
+  <div class="section">
+    <div class="stitle">Room Categories</div>
+    <div class="rooms-grid">
+      <div class="rcard"><div class="rname">Classic Room</div><div class="rtags"><span class="rtag">33 sqm</span><span class="rtag">84 rooms</span><span class="rtag">King / Twin</span></div></div>
+      <div class="rcard"><div class="rname">Classic Room with Balcony</div><div class="rtags"><span class="rtag">33 sqm</span><span class="rtag">18 rooms</span><span class="rtag">Private balcony</span></div></div>
+      <div class="rcard"><div class="rname">Classic Pool View Room</div><div class="rtags"><span class="rtag">33 sqm</span><span class="rtag">34 rooms</span><span class="rtag">Pool facing</span></div></div>
+      <div class="rcard"><div class="rname">Family Studio Room</div><div class="rtags"><span class="rtag">48 sqm</span><span class="rtag">5 rooms</span><span class="rtag">King + extra beds</span></div></div>
+      <div class="rcard"><div class="rname">Junior Suite</div><div class="rtags"><span class="rtag">50 sqm</span><span class="rtag">4 suites</span><span class="rtag">Separate lounge</span></div></div>
+      <div class="rcard"><div class="rname">Vista Family Studio</div><div class="rtags"><span class="rtag">86 sqm</span><span class="rtag">Premium views</span><span class="rtag">Largest room</span></div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="stitle">Event Venues</div>
+    <div class="venues-list">
+      <div class="vrow"><div class="vname">Telhado (Open-Air Venue)</div><div class="vcaps"><span class="vcap">557 sqm</span><span class="vcap">Up to 400 pax</span><span class="vcap">Outdoor · Cocktails / Dinner</span></div></div>
+      <div class="vrow"><div class="vname">Jazz & Grill Hall</div><div class="vcaps"><span class="vcap">Inbuilt stage</span><span class="vcap">Up to 250 pax</span><span class="vcap">Indoor · AV equipped</span></div></div>
+      <div class="vrow"><div class="vname">Meridien Ballroom</div><div class="vcaps"><span class="vcap">Theatre: 300 pax</span><span class="vcap">Banquet: 200 pax</span><span class="vcap">Divisible</span></div></div>
+      <div class="vrow"><div class="vname">Breakout Rooms</div><div class="vcaps"><span class="vcap">20–60 pax each</span><span class="vcap">AV equipped</span><span class="vcap">Multiple rooms</span></div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="stitle">Why Le Méridien Goa</div>
+    <div class="usps">
+      <div class="usp"><div class="usp-icon">🌿</div><div><div class="usp-title">Sustainability Credentials</div><div class="usp-desc">Solar panels & NGO food donation programme — great for CSR-conscious groups.</div></div></div>
+      <div class="usp"><div class="usp-icon">🎵</div><div><div class="usp-title">Inbuilt Stage Venue</div><div class="usp-desc">Jazz & Grill hall with permanent stage — perfect for award nights, product launches & entertainment.</div></div></div>
+      <div class="usp"><div class="usp-icon">📍</div><div><div class="usp-title">Heart of Calangute</div><div class="usp-desc">Walking distance from beach, restaurants, and shopping — ideal for leisure groups.</div></div></div>
+      <div class="usp"><div class="usp-icon">💰</div><div><div class="usp-title">Best Value 5-Star</div><div class="usp-desc">Marriott Bonvoy property at significantly lower rates than JW — strong ROI for group budgets.</div></div></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <img src="https://i.ibb.co/679vpSRS/logo-DBlue.png" alt="TravClan">
+  <p>Prepared by TravClan · naman.sharma@travclan.com<br>All prices are indicative. © TravClan 2026</p>
+</div>
+</body></html>

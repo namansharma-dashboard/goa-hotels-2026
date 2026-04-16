@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novotel Goa Dona Sylvia Resort — TravClan</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--forest:#1A2E1A;--champ2:#D4BC82;--cream:#F5F2EB;--sand:#EDE8DC;--white:#fff;--muted:#7A8A72;--border:#DDD8CC;--text:#1E2A1E}
+body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--text)}
+.header{background:var(--forest);height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 40px}
+.header img{height:30px;filter:brightness(0) invert(1);opacity:.92}
+.back-btn{font-size:12px;color:var(--champ2);text-decoration:none;opacity:.8}.back-btn:hover{opacity:1}
+.hero{position:relative;height:340px;overflow:hidden;background:var(--forest)}
+.hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,46,26,.92) 0%,rgba(26,46,26,.3) 55%,transparent 100%)}
+.hero-content{position:absolute;bottom:0;left:0;right:0;padding:28px 40px}
+.hbadge{display:inline-block;font-size:10px;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:10px;background:rgba(255,255,255,.9);color:var(--forest)}
+.hname{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:6px}
+.hloc{font-size:12px;color:rgba(255,255,255,.65)}
+.stars{display:flex;gap:3px;margin-top:8px}
+.s{width:12px;height:12px;background:var(--champ2);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.page{max-width:860px;margin:0 auto;padding:40px 24px 80px}
+.section{margin-bottom:36px}
+.stitle{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--forest);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--champ2)}
+.intro-box{background:var(--white);border-radius:12px;border:1px solid var(--border);padding:22px 24px;font-size:13px;color:#3A4A3A;line-height:1.8;border-left:4px solid var(--champ2)}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+.pbox{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px 18px}
+.pbl{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-bottom:6px}
+.pbv{font-size:20px;font-weight:700;color:var(--forest);margin-bottom:3px}
+.pbs{font-size:11px;color:var(--muted)}
+.note-box{background:var(--sand);border-radius:8px;padding:10px 14px;font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}
+.rooms-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rcard{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.rname{font-size:13px;font-weight:600;color:var(--forest);margin-bottom:6px}
+.rtags{display:flex;flex-wrap:wrap;gap:5px}
+.rtag{font-size:10px;background:var(--sand);color:#3A4A3A;padding:3px 9px;border-radius:20px}
+.venues-list{display:flex;flex-direction:column;gap:10px}
+.vrow{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.vname{font-size:13px;font-weight:600;color:var(--forest);flex:1;min-width:160px}
+.vcaps{display:flex;gap:8px;flex-wrap:wrap}
+.vcap{font-size:11px;color:var(--muted);background:var(--sand);padding:3px 10px;border-radius:20px}
+.usps{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.usp{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.usp-icon{font-size:20px;flex-shrink:0}
+.usp-title{font-size:13px;font-weight:600;color:var(--forest);margin-bottom:3px}
+.usp-desc{font-size:11px;color:var(--muted);line-height:1.5}
+.footer{background:var(--forest);padding:28px 24px;text-align:center;border-top:3px solid rgba(232,213,163,.2)}
+.footer img{height:26px;filter:brightness(0) invert(1);opacity:.85;margin-bottom:8px}
+.footer p{font-size:10px;color:rgba(255,255,255,.25);line-height:1.8;margin-top:8px}
+@media(max-width:600px){.price-grid,.rooms-grid,.usps{grid-template-columns:1fr}.hname{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="https://i.ibb.co/679vpSRS/logo-DBlue.png" alt="TravClan">
+  <a class="back-btn" href="index.html">← Back to all hotels</a>
+</div>
+<div class="hero">
+  <img src="https://s3.ap-south-1.amazonaws.com/com.travclan.cms.production/appcms/a6p4_ho_01_p_2048x1536.jpg" alt="Novotel Dona Sylvia" onerror="this.src='https://images.unsplash.com/photo-1439130490301-25e322d88054?w=1200&q=80'">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hbadge">Premium · 5-Star</div>
+    <div class="hname">Novotel Goa Dona Sylvia Resort</div>
+    <div class="hloc">📍 Cavelossim Beach, Salcete · 181 villa-style rooms · 33 km Dabolim</div>
+    <div class="stars"><div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div></div>
+  </div>
+</div>
+<div class="page">
+  <div class="section">
+    <div class="stitle">Overview</div>
+    <div class="intro-box">South Goa's most established MICE resort — Novotel Goa Dona Sylvia has hosted thousands of corporate groups over its legacy tenure on 20 acres of Cavelossim beachfront. The largest pillar-less Grand Ballroom in South Goa, 50,000 sq.ft of outdoor lawns for up to 2,000 pax, and 181 villa-style rooms make it the benchmark property for large-scale MICE in South Goa. Private beach access is included for all guests.</div>
+  </div>
+  <div class="section">
+    <div class="stitle">Tentative Pricing</div>
+    <div class="price-grid">
+      <div class="pbox"><div class="pbl">Rooms from</div><div class="pbv">₹4,000 – ₹18,000</div><div class="pbs">per room / night</div></div>
+      <div class="pbox"><div class="pbl">Conference from</div><div class="pbv">₹50K – ₹1L</div><div class="pbs">per hall / day</div></div>
+    </div>
+    <div class="note-box">ⓘ All prices are tentative. Final rates depend on date of travel, group size & availability.</div>
+  </div>
+  <div class="section">
+    <div class="stitle">Room Categories</div>
+    <div class="rooms-grid">
+      <div class="rcard"><div class="rname">Garden Villa</div><div class="rtags"><span class="rtag">Villa-style</span><span class="rtag">Garden view</span><span class="rtag">King / Twin</span></div></div>
+      <div class="rcard"><div class="rname">Pool Villa</div><div class="rtags"><span class="rtag">Villa-style</span><span class="rtag">Pool view</span><span class="rtag">King / Twin</span></div></div>
+      <div class="rcard"><div class="rname">Sea View Villa</div><div class="rtags"><span class="rtag">Villa-style</span><span class="rtag">Sea view</span><span class="rtag">King</span></div></div>
+      <div class="rcard"><div class="rname">Suite</div><div class="rtags"><span class="rtag">Premium</span><span class="rtag">Separate living area</span><span class="rtag">King</span></div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="stitle">Event Venues</div>
+    <div class="venues-list">
+      <div class="vrow"><div class="vname">Grand Ballroom (Pillar-less)</div><div class="vcaps"><span class="vcap">Largest in South Goa</span><span class="vcap">Theatre: 1,200 pax</span><span class="vcap">Banquet: 900 pax</span></div></div>
+      <div class="vrow"><div class="vname">Outdoor Lawns</div><div class="vcaps"><span class="vcap">50,000 sq.ft</span><span class="vcap">Up to 2,000 pax</span><span class="vcap">Beachside</span></div></div>
+      <div class="vrow"><div class="vname">Dona Sylvia Hall</div><div class="vcaps"><span class="vcap">Theatre: 400 pax</span><span class="vcap">Banquet: 300 pax</span><span class="vcap">Indoor</span></div></div>
+      <div class="vrow"><div class="vname">Breakout Rooms (×6)</div><div class="vcaps"><span class="vcap">20–80 pax each</span><span class="vcap">AV equipped</span><span class="vcap">Multiple configurations</span></div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="stitle">Why Novotel Dona Sylvia</div>
+    <div class="usps">
+      <div class="usp"><div class="usp-icon">🏛️</div><div><div class="usp-title">Largest Pillar-less Ballroom in South Goa</div><div class="usp-desc">No obstructed views — ideal for large award nights, gala dinners, and product launches.</div></div></div>
+      <div class="usp"><div class="usp-icon">🌿</div><div><div class="usp-title">20 Acres of Resort Grounds</div><div class="usp-desc">Villa-style spread across lush tropical gardens — feels like a private resort for your group.</div></div></div>
+      <div class="usp"><div class="usp-icon">🏖️</div><div><div class="usp-title">Private Cavelossim Beach</div><div class="usp-desc">Exclusive beach access for all guests — perfect for team events, beach dinners, and watersports.</div></div></div>
+      <div class="usp"><div class="usp-icon">💰</div><div><div class="usp-title">Best Value MICE in South Goa</div><div class="usp-desc">Conference rates from ₹50K — unbeatable pricing for a 5-star resort of this scale and reputation.</div></div></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <img src="https://i.ibb.co/679vpSRS/logo-DBlue.png" alt="TravClan">
+  <p>Prepared by TravClan · naman.sharma@travclan.com<br>All prices are indicative. © TravClan 2026</p>
+</div>
+</body></html>

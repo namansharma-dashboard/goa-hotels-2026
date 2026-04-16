@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandrem Beach Resort — TravClan</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--forest:#1A2E1A;--champ2:#D4BC82;--cream:#F5F2EB;--sand:#EDE8DC;--white:#fff;--muted:#7A8A72;--border:#DDD8CC;--text:#1E2A1E}
+body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--text)}
+.header{background:var(--forest);height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 40px}
+.header img{height:30px;filter:brightness(0) invert(1);opacity:.92}
+.back-btn{font-size:12px;color:var(--champ2);text-decoration:none;opacity:.8}.back-btn:hover{opacity:1}
+.hero{position:relative;height:340px;overflow:hidden;background:var(--forest)}
+.hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,46,26,.92) 0%,rgba(26,46,26,.3) 55%,transparent 100%)}
+.hero-content{position:absolute;bottom:0;left:0;right:0;padding:28px 40px}
+.hbadge{display:inline-block;font-size:10px;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:10px;background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.hname{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:6px}
+.hloc{font-size:12px;color:rgba(255,255,255,.65)}
+.stars{display:flex;gap:3px;margin-top:8px}
+.s{width:12px;height:12px;background:var(--champ2);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.s.e{background:rgba(255,255,255,.25)}
+.page{max-width:860px;margin:0 auto;padding:40px 24px 80px}
+.section{margin-bottom:36px}
+.stitle{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--forest);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--champ2)}
+.intro-box{background:var(--white);border-radius:12px;border:1px solid var(--border);padding:22px 24px;font-size:13px;color:#3A4A3A;line-height:1.8;border-left:4px solid var(--champ2)}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+.pbox{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px 18px}
+.pbl{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:600;margin-bottom:6px}
+.pbv{font-size:20px;font-weight:700;color:var(--forest);margin-bottom:3px}
+.pbs{font-size:11px;color:var(--muted)}
+.note-box{background:var(--sand);border-radius:8px;padding:10px 14px;font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}
+.rooms-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rcard{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.rname{font-size:13px;font-weight:600;color:var(--forest);margin-bottom:6px}
+.rtags{display:flex;flex-wrap:wrap;gap:5px}
+.rtag{font-size:10px;background:var(--sand);color:#3A4A3A;padding:3px 9px;border-radius:20px}
+.usps{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.usp{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.usp-icon{font-size:20px;flex-shrink:0}
+.usp-title{font-size:13px;font-weight:600;color:var(--forest);margin-bottom:3px}
+.usp-desc{font-size:11px;color:var(--muted);line-height:1.5}
+.footer{background:var(--forest);padding:28px 24px;text-align:center;border-top:3px solid rgba(232,213,163,.2)}
+.footer img{height:26px;filter:brightness(0) invert(1);opacity:.85;margin-bottom:8px}
+.footer p{font-size:10px;color:rgba(255,255,255,.25);line-height:1.8;margin-top:8px}
+@media(max-width:600px){.price-grid,.rooms-grid,.usps{grid-template-columns:1fr}.hname{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="https://i.ibb.co/679vpSRS/logo-DBlue.png" alt="TravClan">
+  <a class="back-btn" href="index.html">← Back to all hotels</a>
+</div>
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200&q=80" alt="Mandrem Beach Resort">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hbadge">Boutique · Radisson Individuals Retreats</div>
+    <div class="hname">Mandrem Beach Resort · Radisson Individuals Retreats</div>
+    <div class="hloc">📍 Mandrem, North Goa · Beachfront + Riverfront · Quiet & unspoiled</div>
+    <div class="stars"><div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div><div class="s e"></div></div>
+  </div>
+</div>
+<div class="page">
+  <div class="section">
+    <div class="stitle">Overview</div>
+    <div class="intro-box">A rare gem in Goa's hospitality landscape — Mandrem Beach Resort offers only 41 boutique rooms with the extraordinary privilege of dual frontage: both beachfront and riverfront access on the serene Mandrem coastline. Two suites feature private plunge pools. Part of Radisson Individuals Retreats, this is the ideal choice for exclusive leadership retreats, intimate weddings, and full property buyouts where privacy and exclusivity are paramount.</div>
+  </div>
+  <div class="section">
+    <div class="stitle">Tentative Pricing</div>
+    <div class="price-grid">
+      <div class="pbox"><div class="pbl">Rooms from</div><div class="pbv">₹6,000 – ₹20,000+</div><div class="pbs">per room / night</div></div>
+      <div class="pbox"><div class="pbl">Full Buyout</div><div class="pbv">Available</div><div class="pbs">41 rooms · Contact for quote</div></div>
+    </div>
+    <div class="note-box">ⓘ All prices are tentative. Final rates depend on date of travel, group size & availability. Full property buyout available for exclusive events.</div>
+  </div>
+  <div class="section">
+    <div class="stitle">Room Categories</div>
+    <div class="rooms-grid">
+      <div class="rcard"><div class="rname">Beachfront Room</div><div class="rtags"><span class="rtag">Direct beach access</span><span class="rtag">King / Twin</span></div></div>
+      <div class="rcard"><div class="rname">Riverfront Room</div><div class="rtags"><span class="rtag">River view</span><span class="rtag">King / Twin</span><span class="rtag">Serene setting</span></div></div>
+      <div class="rcard"><div class="rname">Cottage Room</div><div class="rtags"><span class="rtag">Garden setting</span><span class="rtag">Boutique charm</span></div></div>
+      <div class="rcard"><div class="rname">Plunge Pool Suite</div><div class="rtags"><span class="rtag">2 suites</span><span class="rtag">Private plunge pool</span><span class="rtag">Premium</span></div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="stitle">Event & Retreat Spaces</div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px 22px;font-size:13px;color:#3A4A3A;line-height:1.8">
+      Events at Mandrem are intimate by design. The property offers outdoor setup areas for up to ~60 pax — ideal for:<br><br>
+      🌅 <strong>Sunrise / Sunset ceremonies</strong> on the beachfront<br>
+      🏕️ <strong>Riverside dinners</strong> under the stars<br>
+      🧘 <strong>Wellness & yoga retreats</strong> on the beach lawn<br>
+      🎯 <strong>Leadership offsites</strong> in a distraction-free environment<br>
+      💍 <strong>Intimate weddings</strong> with full property privacy
+    </div>
+  </div>
+  <div class="section">
+    <div class="stitle">Why Mandrem Beach Resort</div>
+    <div class="usps">
+      <div class="usp"><div class="usp-icon">🌊</div><div><div class="usp-title">Dual Beachfront & Riverfront</div><div class="usp-desc">Rare double water frontage — no other property in North Goa offers both beach and river access.</div></div></div>
+      <div class="usp"><div class="usp-icon">🔐</div><div><div class="usp-title">Full Buyout Option</div><div class="usp-desc">Take over the entire 41-room property — complete privacy for your group, no other guests.</div></div></div>
+      <div class="usp"><div class="usp-icon">🌿</div><div><div class="usp-title">Unspoiled Mandrem</div><div class="usp-desc">Far from the crowded Calangute–Baga belt — peaceful, pristine, and exclusive North Goa.</div></div></div>
+      <div class="usp"><div class="usp-icon">🛁</div><div><div class="usp-title">Private Plunge Pool Suites</div><div class="usp-desc">Two suites with private pools — perfect for VIP guests, honeymooners, or senior leadership.</div></div></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <img src="https://i.ibb.co/679vpSRS/logo-DBlue.png" alt="TravClan">
+  <p>Prepared by TravClan · naman.sharma@travclan.com<br>All prices are indicative. © TravClan 2026</p>
+</div>
+</body></html>
